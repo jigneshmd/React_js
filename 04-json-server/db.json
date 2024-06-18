@@ -1,0 +1,7 @@
+{
+    "std": [
+        {"name":"jay","age":22, "marks":34},
+        {"name":"takshil","age":25, "marks":45},
+        {"name":"dhruv","age":21, "marks":89}
+    ]
+}

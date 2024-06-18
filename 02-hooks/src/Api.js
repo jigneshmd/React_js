@@ -9,19 +9,18 @@ const Api = () => {
             console.log(result);
             setProduct(result)
         })
-
     }, [])
 
     return (
         <>
             <div className="container m-auto d-flex gap-4 flex-wrap mt-5 mb-5 justify-content-center">
-                {Product.map((prd) => {
+                {Product.map((Product) => {
                     return (
                         <div className="card" style={{ height: '400px', width: '250px' }}>
-                            <img height={'200px'} src={prd.image} className="card-img-top" alt="..." />
+                            <img height={'200px'} src={Product.image} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <h5 className='card-title'>{prd.title}</h5>
-                                <p className="card-text">{prd.description.substr(1,40)}</p>
+                                <h5 className='card-title'>{Product.title}</h5>
+                                <p className="card-text">{Product.description.substr(1, 40)}</p>
                             </div>
                         </div>
                     )

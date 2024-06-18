@@ -1,8 +1,12 @@
+// import Std from "./Std";
+
+import TodoApp from "./TodoApp";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      {/* <Std/> */}
+      <TodoApp />
     </div>
   );
 }
