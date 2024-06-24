@@ -10,7 +10,7 @@ const Product = () => {
         return res.json();
       })
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         setProd(result);
         setImg(result.images);
       });

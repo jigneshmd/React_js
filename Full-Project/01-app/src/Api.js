@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { Params } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Slider from "./Slider";
+
 const Api = () => {
   const [Product, setProduct] = useState([]);
-  const id = useParams();
-  // console.log(id);
   useEffect(() => {
     fetch(`https://api.escuelajs.co/api/v1/products`)
       .then((res) => {
         return res.json();
       })
       .then((result) => {
-        // console.log(result);
+        console.log(result);
         setProduct(result);
       });
   }, []);
@@ -31,7 +29,7 @@ const Api = () => {
                 >
                   <img
                     height={"200px"}
-                    src={prd.image}
+                    src={prd.images[0]}
                     className="card-img-top"
                     alt="..."
                   />

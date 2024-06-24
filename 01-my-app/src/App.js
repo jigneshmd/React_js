@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Contact from "./Contact";
 
 function App() {
-  return (
+  return ( 
     <div className="App">
       <Head />
       <Slider />
